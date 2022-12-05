@@ -41,7 +41,7 @@ const NavBar = () => {
                 <NavItem>
                     <NavLinks>
                         <NavStyledText>
-                            <Title level={5}> Data Transformation</Title>
+                            <Title level={5}>   Free Trial</Title>
                         </NavStyledText>
                     </NavLinks>
                 </NavItem>
@@ -50,7 +50,7 @@ const NavBar = () => {
             <NavBtn>
                 <NavBtnLink>
                     <NavStyledText>
-                        <Title level={5}> Feature Engineering</Title>
+                        <Title level={5}> Docs</Title>
                     </NavStyledText>
                 </NavBtnLink>
             </NavBtn>
