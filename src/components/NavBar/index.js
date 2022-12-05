@@ -1,15 +1,13 @@
 import React from 'react'
-import { MobileIcon, NavBtn, NavBtnLink, NavContainer, NavItem, NavLinks, NavLogo, NavMenu, NavStyledText, NavWrapper,Title } from './navBarElements'
+import { MobileIcon, NavBtn, NavBtnLink, NavBtnStyledText, NavContainer, NavItem, NavLinks, NavLogo, NavMenu, NavStyledText, NavWrapper} from './navBarElements'
 
 const NavBar = () => {
   return (
     <NavWrapper>
         <NavContainer>
         
-            <NavLogo>
-                <NavStyledText>
-                    <Title level={4}>Xn2Y AI</Title>
-                </NavStyledText>
+            <NavLogo to='/'>
+            Xn2Y AI
             </NavLogo>
 
             <MobileIcon>
@@ -21,7 +19,7 @@ const NavBar = () => {
                 <NavItem>
                     <NavLinks>
                     <NavStyledText>
-                    <Title level={5}> About Us</Title>
+                    About Us
                     </NavStyledText>
                     </NavLinks>
                 </NavItem>
@@ -31,7 +29,7 @@ const NavBar = () => {
                 <NavItem>
                     <NavLinks>
                         <NavStyledText>
-                            <Title level={5}> Data Exploration</Title>
+                         Data Exploration
                         </NavStyledText>
                     </NavLinks>
                 </NavItem>
@@ -39,9 +37,9 @@ const NavBar = () => {
 
             <NavMenu>
                 <NavItem>
-                    <NavLinks>
+                    <NavLinks to='/product'>
                         <NavStyledText>
-                            <Title level={5}>   Free Trial</Title>
+                             Free Trial
                         </NavStyledText>
                     </NavLinks>
                 </NavItem>
@@ -49,9 +47,9 @@ const NavBar = () => {
 
             <NavBtn>
                 <NavBtnLink>
-                    <NavStyledText>
-                        <Title level={5}> Docs</Title>
-                    </NavStyledText>
+                    <NavBtnStyledText>
+                         Docs
+                    </NavBtnStyledText>
                 </NavBtnLink>
             </NavBtn>
 
