@@ -1,17 +1,18 @@
 import React from 'react'
 import { MobileIcon, NavBtn, NavBtnLink, NavBtnStyledText, NavContainer, NavItem, NavLinks, NavLogo, NavMenu, NavStyledText, NavWrapper} from './navBarElements'
+import {FaBars} from 'react-icons/fa'
 
-const NavBar = () => {
+const NavBar = ({toggle}) => {
   return (
-    <NavWrapper>
-        <NavContainer>
+    <NavWrapper id='Nav Wrapper'>
+        <NavContainer id='Nav Container'>
         
             <NavLogo to='/'>
-            Xn2Y AI
+            Xn2Y Ai
             </NavLogo>
 
-            <MobileIcon>
-
+            <MobileIcon onClick={toggle} id='mobileIcon'>
+            <FaBars/>
             </MobileIcon>
 
 {/* add antd styling to navlinks via styled components css */}
@@ -39,16 +40,16 @@ const NavBar = () => {
                 <NavItem>
                     <NavLinks to='/product'>
                         <NavStyledText>
-                             Free Trial
+                             Documentation
                         </NavStyledText>
                     </NavLinks>
                 </NavItem>
             </NavMenu>
 
             <NavBtn>
-                <NavBtnLink>
+                <NavBtnLink to='/'>
                     <NavBtnStyledText>
-                         Docs
+                         Free Trial
                     </NavBtnStyledText>
                 </NavBtnLink>
             </NavBtn>
